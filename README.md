@@ -8,6 +8,19 @@ Most recommendation systems fail in one of two ways: they ignore item content en
 
 The system is trained and evaluated on the [MovieLens](https://grouplens.org/datasets/movielens/) dataset — a well-studied benchmark with 100K+ explicit ratings from real users, rich genre metadata, and user-generated tags.
 
+## Dataset
+
+**MovieLens ml-latest-small** — sourced from [GroupLens](https://grouplens.org/datasets/movielens/latest/)
+
+| File | Description |
+|---|---|
+| `ratings.csv` | userId, movieId, rating (0.5–5.0), timestamp |
+| `movies.csv` | movieId, title, genres (pipe-separated) |
+| `tags.csv` | userId, movieId, user-generated tag, timestamp |
+| `links.csv` | movieId, IMDB ID, TMDB ID |
+
+Raw files live in `data/raw/` and are not committed to git (see `.gitignore`).
+
 ## Tech Stack
 
 | Purpose | Library |

@@ -3,8 +3,8 @@ myenv/
 venv/
 .env
 
-# Raw datasets (too large for git)
-data/raw/
+# Raw datasets (uncomment if dataset is too large)
+# data/raw/
 
 # Python cache
 __pycache__/
