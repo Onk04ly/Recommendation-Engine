@@ -1,0 +1,34 @@
+# Virtual environment
+myenv/
+venv/
+.env
+
+# Raw datasets (too large for git)
+data/raw/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.jupyter/
+*.ipynb_checkpoints
+
+# Model artifacts (large binaries)
+*.pkl
+*.h5
+*.pt
+*.bin
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
