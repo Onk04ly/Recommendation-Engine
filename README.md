@@ -120,7 +120,7 @@ Random baseline for this setup ≈ 5% @5 and 10% @10. Both models clear it comfo
 
 ---
 
-## Week 3 — Content-Based Filtering & Hybrid System
+## Content-Based Filtering & Hybrid System
 
 ### Content-Based Filtering (TF-IDF)
 
@@ -159,13 +159,13 @@ Both score sets are **min-max normalised to [0, 1]** before combining — CF rat
 | Content-Based (TF-IDF) | — | — |
 | Hybrid (best α) | — | — |
 
-*Run `notebooks/week3_content_hybrid.ipynb` to populate the CBF and Hybrid rows.*
+*Run `notebooks/content_hybrid.ipynb` to populate the CBF and Hybrid rows.*
 
 ### Model Comparison Chart
 
 ![Model Comparison](data/processed/viz_model_comparison.png)
 
-*(Generated after running the Week 3 notebook)*
+*(Generated after running the notebook)*
 
 ---
 
