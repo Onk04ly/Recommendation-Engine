@@ -74,7 +74,7 @@ Even among the top 50 most active users and top 50 most popular movies, visible 
 
 Ratings span from 1996 to 2018. Two notable activity spikes: around 2000 and again around 2015–2016. Activity dropped near-zero in 1998–1999 before recovering. The irregular bursts suggest users rate in bulk sessions rather than consistently over time.
 
-## Week 2 — Collaborative Filtering
+## Collaborative Filtering
 
 Using a **temporal leave-one-out split** (each user's most recent rating held out as the test item), we trained and evaluated four models.
 
@@ -150,7 +150,7 @@ Both score sets are **min-max normalised to [0, 1]** before combining — CF rat
 
 **Alpha tuning:** Grid search over α ∈ {0.3, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0} on a held-out validation split (never the test set).
 
-### Week 3 Results
+### Results
 
 | Model | HR@5 | HR@10 |
 |---|---|---|
