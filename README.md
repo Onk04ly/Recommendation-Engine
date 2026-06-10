@@ -120,7 +120,7 @@ Random baseline for this setup ≈ 5% @5 and 10% @10. Both models clear it comfo
 
 ---
 
-## Content-Based Filtering & Hybrid System
+## Week 3 — Content-Based Filtering & Hybrid System
 
 ### Content-Based Filtering (TF-IDF)
 
@@ -156,16 +156,16 @@ Both score sets are **min-max normalised to [0, 1]** before combining — CF rat
 |---|---|---|
 | SVD (k=100) | 0.1833 | 0.2583 |
 | NMF (k=50) | 0.1222 | 0.2139 |
-| Content-Based (TF-IDF) | — | — |
-| Hybrid (best α) | — | — |
+| Content-Based (TF-IDF) | 0.0972 | 0.1528 |
+| Hybrid (α=0.8) | 0.1889 | 0.2639 |
 
-*Run `notebooks/content_hybrid.ipynb` to populate the CBF and Hybrid rows.*
+Random baseline ≈ 5% @5 and 10% @10. Best alpha (α=0.8) was selected via grid search on the validation split.
 
 ### Model Comparison Chart
 
 ![Model Comparison](data/processed/viz_model_comparison.png)
 
-*(Generated after running the notebook)*
+*(Generated after running the Week 3 notebook)*
 
 ---
 
@@ -198,6 +198,6 @@ Recommendation-Engine/
 │   ├── cbf_model.py            ← TF-IDF content-based filtering
 │   ├── hybrid.py               ← weighted hybrid recommender
 │   └── evaluation.py           ← RMSE, MAE, Hit Rate@K
-├── app/                        ← Streamlit demo
+├── app/                        ← Streamlit 
 └── requirements.txt
 ```
